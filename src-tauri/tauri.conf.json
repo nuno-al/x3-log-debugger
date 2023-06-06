@@ -38,7 +38,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "nuno-al/x3-log-debugger",
+      "identifier": "x3-log-debugger.nuno-al",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
