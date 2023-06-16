@@ -1,8 +1,8 @@
 <script lang="ts">
 
-    import SourcesConfig from "./SourcesConfig.svelte";
-    import FileLoader from "./FileLoader.svelte";
-    import EditorPanes from "./EditorPanes.svelte";
+    import SourcesConfig from "$lib/SourcesConfig.svelte";
+    import FileLoader from "$lib/FileLoader.svelte";
+	import EditorPanes from "$lib/EditorPanes.svelte";
 
     let log_text: string = "";
 

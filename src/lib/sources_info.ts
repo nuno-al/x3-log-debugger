@@ -1,5 +1,5 @@
 import { get } from 'svelte/store'
-import { storable } from "./storable";
+import { storable } from "$lib/storable";
 import { readDir } from '@tauri-apps/api/fs';
 import { path } from '@tauri-apps/api';
 

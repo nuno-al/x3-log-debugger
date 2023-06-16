@@ -2,6 +2,7 @@
     import { createEventDispatcher, tick, onMount, onDestroy } from "svelte";
     import * as ace from "brace";
     import "brace/ext/emmet";
+    
     const EDITOR_ID = `svelte-ace-editor-div:${Math.floor(
       Math.random() * 10000000000
     )}`;

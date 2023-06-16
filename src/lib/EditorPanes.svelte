@@ -1,14 +1,14 @@
 <script lang="ts">
     
     import { readTextFile } from '@tauri-apps/api/fs';
-    import { sources_info as sources, type SourceInfo, getSource, initSources } from "./sources_info";
-    import { debug_info } from "./debug_info";
+	import { onMount } from "svelte";
+    import { getSource, initSources } from "$lib/sources_info";
+    import { debug_info } from "$lib/debug_info";
     import { Pane, Splitpanes } from 'svelte-splitpanes';
-    import AceEditor from "./AceEditor.svelte";
+    import AceEditor from "$lib/AceEditor.svelte";
     import type * as ace from "brace";
     import "brace/mode/html";
-    import "./chrome";
-	import { onMount } from "svelte";
+    import "$lib/chrome";
     
     const PATTERN1: RegExp = /^<channel [123]>@(.+?)\.TRT\/(.+?)\$adx\((\d+)\).*$/
     const PATTERN2: RegExp = /^<channel 4>Execution SQL on (Read|For) clause in @(.+?)\.TRT\/(.+?)\$adx at line (\d+).*$/

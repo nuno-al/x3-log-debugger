@@ -1,4 +1,4 @@
-import { storable } from "./storable";
+import { storable } from "$lib/storable";
 
 export type DebugInfo = {
     level: number,
